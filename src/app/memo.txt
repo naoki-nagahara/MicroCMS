@@ -1,0 +1,3 @@
+CMSのAPIデータをSUBとMAINそれぞれSOTERに格納
+
+mainコンテンツEffectで加工して、ランダムなコンテンツに星マークを付ける

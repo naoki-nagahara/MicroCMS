@@ -1,0 +1,13 @@
+<h1>サブコンテンツ</h1>
+<div class="subContainer">
+  <div *ngFor="let content of contentData">
+    <div *ngIf="content.hit" class="hit">
+      <p>{{ content.hit }}</p>
+      <i class="material-icons">whatshot</i>
+    </div>
+    {{ content.title }}
+    <div class="subContainerImage">
+      <img [src]="content.image.url" alt="" />
+    </div>
+  </div>
+</div>

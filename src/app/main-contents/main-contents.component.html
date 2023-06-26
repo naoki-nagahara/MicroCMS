@@ -1,0 +1,19 @@
+<h1>メインコンテンツ</h1>
+<div class="subContainer">
+  <div *ngFor="let content of contentsData" class="inner">
+    <ng-container *ngIf="content.new">
+      <div class="newContent">
+        <p>
+          {{ content.new }}
+        </p>
+      </div>
+    </ng-container>
+
+    <p>
+      {{ content.title }}
+    </p>
+    <div class="subContainerImage">
+      <img [src]="content.image.url" alt="" />
+    </div>
+  </div>
+</div>
